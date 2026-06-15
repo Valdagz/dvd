@@ -1,0 +1,73 @@
+/* Nulstil standard margin og gør baggrunden sort */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Canvas skal fylde hele skærmen */
+#gameCanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* UI Vindue */
+#ui {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    color: white;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 12px;
+    border-radius: 8px;
+    width: 260px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Knapper */
+button {
+    all: unset !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 6px 0 !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    background: linear-gradient(135deg, #00e0a4, #00aaff) !important;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+    box-sizing: border-box !important;
+    transition: transform 0.1s ease;
+}
+
+button:hover { 
+    transform: scale(1.05) !important; 
+}
+
+button:active { 
+    transform: scale(0.95) !important; 
+}
+
+/* Input felter (Admin) */
+input {
+    width: 100% !important;
+    padding: 8px !important;
+    border-radius: 8px !important;
+    border: none !important;
+    outline: none !important;
+    box-sizing: border-box !important;
+    color: black;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 10px 0;
+}
